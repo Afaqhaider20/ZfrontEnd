@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+}
+
 details > summary {
-    list-style: none;
-  }
-details > summary::-webkit-details-marker {
-    display: none;
-  }
+  list-style: none;
+}
