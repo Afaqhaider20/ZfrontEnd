@@ -5,7 +5,7 @@ const faqs = [
   {
     question: "What dental insurance plans do you accept?",
     answer:
-      "We accept a wide range of dental insurance plans, including those from major providers such as RSSB, MMI, PRIME, RADIANT, SORAS, BRITAM, BK, and SANLAM. We also accept most PPO services.",
+      "We accept a wide range of dental insurance plans, including those from major providers such as Aetna PPO, Cigna, MetLife, Humana, United Healthcare, Principal, GEHA, and Central States. We also accept most PPO services.",
   },
   {
     question: "How do I know if my insurance covers a specific treatment?",
@@ -112,3 +112,4 @@ const Insurance = () => {
 };
 
 export default Insurance;
+
