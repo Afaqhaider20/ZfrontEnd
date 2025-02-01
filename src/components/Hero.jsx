@@ -1,6 +1,6 @@
 import { Fade } from "react-awesome-reveal";
 import { Link } from "react-scroll";
-import { Star, Award, Heart, SmilePlus } from "lucide-react";
+import { Heart, SmilePlus, CheckCircle, Shield } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -48,19 +48,18 @@ const Hero = () => {
                   </a>
                 </div>
               
-              <div className="mt-12 flex flex-col space-y-3 divide-gray-300 text-sm text-gray-700 sm:flex-row sm:space-y-0 sm:divide-x">
-                <div className="flex max-w-xs space-x-2 px-4">
-                  <Star className="h-12 w-12 text-emerald-600" strokeWidth={2} />
-                  <p>
-                    We are dedicated to providing comprehensive, quality dental
-                    care.
-                  </p>
+                <div className="mt-12 flex flex-col space-y-3 text-sm text-gray-700 sm:flex-row sm:space-y-0 sm:divide-x sm:divide-gray-300">
+                  <div className="flex max-w-xs space-x-3 px-4">
+                    <CheckCircle className="h-8 w-8 text-emerald-600" strokeWidth={2} />
+                    <p>
+                      Comprehensive, quality dental care.
+                    </p>
+                  </div>
+                  <div className="flex max-w-xs space-x-3 px-4">
+                    <Shield className="h-8 w-8 text-blue-600" strokeWidth={2} />
+                    <p>Leading dental clinic in Deltona, Florida.</p>
+                  </div>
                 </div>
-                <div className="flex max-w-xs space-x-2 px-4">
-                  <Award className="h-12 w-12 text-blue-600" strokeWidth={2} />
-                  <p>Leading dental clinic in Deltona, Florida.</p>
-                </div>
-              </div>
               </Fade>
             </div>
             
