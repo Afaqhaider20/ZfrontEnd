@@ -95,9 +95,9 @@ const Insurance = () => {
       <h2 className="text-blue-700 font-extrabold text-center my-8 text-2xl md:text-3xl">
         We work with the insurance companies for your convenience
       </h2>
-      <div className="slider grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 rounded-lg p-4 mx-auto overflow-hidden relative">
+      <div className="slider grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 rounded-lg p-4 mx-auto overflow-hidden relative justify-center">
         {insuranceImages.map((src, index) => (
-          <div key={index} className="slide h-24 w-24 rounded-md overflow-hidden">
+          <div key={index} className="slide h-24 w-24 rounded-md overflow-hidden mx-auto">
             <img
               src={src}
               className="object-cover w-full h-full"
