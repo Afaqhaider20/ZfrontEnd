@@ -106,7 +106,7 @@ const Insurance = () => {
           </div>
         ))}
       </div>
-      <FAQs sectionTitle="Frequently Asked Questions" faqs={faqs} />
+      <FAQs sectionTitle="Insurance FAQs" faqs={faqs} />
     </section>
   );
 };
