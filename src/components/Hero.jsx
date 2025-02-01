@@ -41,7 +41,7 @@ const Hero = () => {
                     Book Appointment
                   </Link>
                   <a
-                    href="tel:1234567890"
+                    href="tel:(386)574-7272"
                     className="ml-4 font-bold text-blue-900 flex items-center text-lg hover:text-blue-700"
                   >
                     Call (386) 574-7272
