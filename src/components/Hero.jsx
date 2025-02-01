@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <main>
       <div className="relative bg-gradient-to-b from-white to-blue-50" name="home">
-        <div className="mx-auto h-full px-4 py-6 sm:max-w-xl md:max-w-full md:px-24 md:pt-6 md:pb-28 lg:px-8">
+        <div className="mx-auto h-full px-4 py-6 sm:max-w-xl md:max-w-full md:px-24 md:py-40 lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="">
               <div className="lg:max-w-xl lg:pr-5">
