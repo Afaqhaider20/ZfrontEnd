@@ -6,7 +6,6 @@ import Team from "../components/Team";
 import Insurance from "../components/Insurance";
 import FAQs from "../components/FAQs";
 import Offers from "../components/offers";
-import Heading from '../components/Heading';
 
 const Home = () => {
   const faqs = [
@@ -79,7 +78,6 @@ const Home = () => {
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen">
-      <Heading title="Welcome to Our Dental Clinic" subtitle="Your smile, our priority" />
       <HeroSection />
       <Services />
       <Features />
