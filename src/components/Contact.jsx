@@ -29,19 +29,36 @@ const Contact = () => {
     }
   }, [showPrivacyPolicy]);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate email sending
-    setTimeout(() => {
-      setIsSent(true);
+    const formData = new FormData(form.current);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setIsSent(true);
+        form.current.reset();
+        setTimeout(() => {
+          setIsSent(false);
+        }, 5000);
+      } else {
+        setError("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      setError("An error occurred. Please try again.");
+    } finally {
       setIsLoading(false);
-      form.current.reset();
-      setTimeout(() => {
-        setIsSent(false);
-      }, 5000);
-    }, 2000);
+    }
   };
 
   const handleAgree = () => {
