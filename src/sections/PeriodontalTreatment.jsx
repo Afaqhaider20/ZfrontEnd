@@ -34,16 +34,21 @@ const PeriodontalTreatment = () => {
               Safeguard your gums with advanced treatments that not only restore gum health but also prevent further damage.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
-                Book Appointment
-              </button>
-              <a
-                href="tel:1234567890"
-                className="font-bold text-white flex items-center text-lg"
-              >
-                Call (866) 264-9482
-              </a>
-            </div>
+  <a
+    href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 py-2 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
+  >
+    Book Appointment
+  </a>
+  <a
+    href="tel:1234567890"
+    className="font-bold text-white flex items-center text-lg"
+  >
+    Call (386) 574-7272
+  </a>
+</div>
           </Fade>
         </div>
       </header>
@@ -63,7 +68,7 @@ const PeriodontalTreatment = () => {
                 <h3 className="text-xl font-bold text-center text-red-600">Unhealthy Gums</h3>
               </div>
               <div className="bg-white shadow-md p-6 rounded-lg">
-                <img src="/Images/P/healthyGums.png" alt="Healthy Gums" className="w-full h-72 object-cover rounded-2xl mb-4" />
+                <img src="/Images/P/healthyGums.jpg" alt="Healthy Gums" className="w-full h-72 object-cover rounded-2xl mb-4" />
                 <h3 className="text-xl font-bold text-center text-green-600">Healthy Gums</h3>
               </div>
             </div>

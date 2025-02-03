@@ -2,6 +2,14 @@ import { Fade } from "react-awesome-reveal";
 import Heading from "./Heading";
 
 const Team = () => {
+  const doctor = {
+    name: "Dr. Jane Doe",
+    role: "Your Doctor",
+    description:
+      "Dr. Jane Doe is a compassionate and experienced physician dedicated to your health and well-being.",
+    image: "/Images/doctor.jpg",
+  };
+
   const teamMembers = [
     {
       name: "Dr. John Doe",
@@ -36,6 +44,32 @@ const Team = () => {
         backgroundBlendMode: "overlay",
       }}
     >
+      {/* Meet Your Doctor Section */}
+      <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <Heading title="Meet Your Doctor" subtitle="Your Doctor" />
+        <div className="flex justify-center">
+          <Fade direction="left">
+            <div className="bg-white rounded-[4rem] rounded-bl-md rounded-tr-md overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl max-w-sm mx-auto">
+              <div className="relative">
+                <img
+                  className="w-full h-64 object-cover"
+                  src={doctor.image || "/placeholder.svg?height=400&width=300"}
+                  alt={doctor.name}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                  <h3 className="text-xl font-bold text-white">{doctor.name}</h3>
+                  <p className="text-sm text-blue-300">{doctor.role}</p>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600">{doctor.description}</p>
+              </div>
+            </div>
+          </Fade>
+        </div>
+      </section>
+
+      {/* Meet Our Dedicated Team Section */}
       <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <Heading title="Meet Our Dedicated Team" subtitle="Our Team" />
         <div className="grid gap-8 row-gap-12 sm:grid-cols-1 lg:grid-cols-3">

@@ -20,6 +20,10 @@ const Hero = () => {
                 </Fade>
 
                 <Fade>
+                  {/* Added Family Owned and Operated tagline */}
+                  <p className="text-lg font-medium text-blue-700 mb-4">
+                    Family Owned and Operated
+                  </p>
                   <p className="text-base text-gray-700 mt-4">
                     At Z Family & Cosmetic Dentistry, we are committed to
                     harmonizing oral health and creating beautiful smiles. Our
@@ -64,7 +68,15 @@ const Hero = () => {
             </div>
             
             <div className="relative hidden lg:ml-32 lg:block lg:w-1/2">
-              <div className="w-fit rounded-[6rem] mx-auto overflow-hidden rounded-tl-md rounded-br-md max-h-[500px]" style={{ backgroundImage: `url('/Images/heroTexture.jpg'), linear-gradient(to bottom, #2563eb, #1e40af)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: "overlay" }}>      
+              <div
+                className="w-fit rounded-[6rem] mx-auto overflow-hidden rounded-tl-md rounded-br-md max-h-[500px]"
+                style={{
+                  backgroundImage: `url('/Images/heroTexture.jpg'), linear-gradient(to bottom, #2563eb, #1e40af)`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundBlendMode: "overlay",
+                }}
+              >      
                 <Fade direction="right">
                   <img className="-mb-20" src="/Images/doctors3.png" alt="hero portrait" />
                 </Fade>
