@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import Fade from "react-awesome-reveal";
-import { Link as ScrollLink } from "react-scroll"; // Import React Scroll's Link for smooth scrolling
 import {
   CheckCircle,
   Clock,
@@ -14,46 +14,48 @@ const faqData = [
   {
     question: "How does dental financing work?",
     answer:
-      "Dental financing at Aspen Dental is provided by third-party lenders to offer you a flexible way to pay for your dental treatments. It provides access to the care you need without having to worry about the cost upfront.",
+      "Dental financing at Aspen Dental is provided by third-party lenders to offer you a flexible way to pay for your dental treatments. It provides access to the care you need without having to worr[...]
   },
   {
     question: "Dental credit cards",
     answer:
-      "Dental credit cards offer patients a line of credit to pay for their current and future dental treatments. Similar to traditional credit cards, your lender will set a credit limit for you to draw on up to a designated maximum amount. Similarly, you can use as much or as little of your credit line as you need, plus you can repay the borrowed funds on a flexible schedule.",
+      "Dental credit cards offer patients a line of credit to pay for their current and future dental treatments. Similar to traditional credit cards, your lender will set a credit limit for you to dr[...]
   },
   {
     question: "Dental loans",
     answer:
-      "Dental loans are unsecured personal loans that you can use to pay for dental procedures with a set monthly payment. Loans like this have a designated borrowing amount that will be repaid over a set period of time, typically through a series of equal payments called installments.",
+      "Dental loans are unsecured personal loans that you can use to pay for dental procedures with a set monthly payment. Loans like this have a designated borrowing amount that will be repaid over a[...]
   },
   {
     question: "What is principal and interest?",
     answer:
-      "Principal refers to the initial amount of money that’s borrowed. It does not include any interest that may be charged on a loan. For example, if you borrow $1,000 for your dental treatment, the principal amount of your loan is $1,000.\n\nInterest is the cost accrued for borrowing money. It’s calculated as a percentage of the principal amount and is typically paid periodically, such as monthly or annually. For example, if you borrow $1,000 for your dental treatment at an annual interest rate (APR) of 5%, you will need to pay $50 in interest over the course of the year. The interest is added to the principal amount, meaning you would need to repay a total of $1,050 for a one-year loan term.",
+      "Principal refers to the initial amount of money that’s borrowed. It does not include any interest that may be charged on a loan. For example, if you borrow $1,000 for your dental treatment, t[...]
   },
   {
     question: "What is deferred interest?",
     answer:
-      "Deferred interest is when your financing plan has a period of zero interest if your balance is paid off before the designated timeframe ends. If you can’t pay it in full by then, interest payments will be owed, often retroactively.",
+      "Deferred interest is when your financing plan has a period of zero interest if your balance is paid off before the designated timeframe ends. If you can’t pay it in full by then, interest pay[...]
   },
   {
     question: "What does term of loan mean?",
     answer:
-      "The term of a loan refers to the length of time you have to repay your loan. It’s the period between the date the loan is disbursed to you and the date it’s fully repaid. The term of your loan is typically expressed in months or years, depending on the duration of your loan.\n\nThe term of your loan is an important consideration when borrowing money as it can have a significant impact on the amount of interest you have to pay over the life of your loan. Generally, a longer loan term will result in lower monthly payments but may result in higher overall interest costs. On the other hand, a shorter loan term will result in paying higher monthly payments with lower overall interest costs.",
+      "The term of a loan refers to the length of time you have to repay your loan. It’s the period between the date the loan is disbursed to you and the date it’s fully repaid. The term of your l[...]
   },
   {
     question: "What is a credit score?",
     answer:
-      "Your credit score is a numerical representation of your creditworthiness. It’s used by lenders to evaluate your ability to repay debt(s) and to determine the level of risk associated with lending you money.\n\nThe most widely used credit scoring model is the FICO score, which ranges from 300 to 850. A higher credit score also indicates a lower risk of default, and is therefore seen as more favorable by lenders.",
+      "Your credit score is a numerical representation of your creditworthiness. It’s used by lenders to evaluate your ability to repay debt(s) and to determine the level of risk associated with len[...]
   },
   {
     question: "What determines a good to bad credit?",
     answer:
-      "Factors that impact your credit score may include your repayment history, amount of debt owed, length of credit history, types of credit used and new credit inquiries. It’s important for you to maintain a good credit score in order to have access to favorable credit terms and interest rates.",
+      "Factors that impact your credit score may include your repayment history, amount of debt owed, length of credit history, types of credit used and new credit inquiries. It’s important for you [...]
   },
 ];
 
 const DentalFinancing = () => {
+  const [showPartners, setShowPartners] = useState(false);
+
   return (
     <main className="bg-blue-50 text-gray-800 pt-16">
       {/* Hero Section */}
@@ -69,16 +71,11 @@ const DentalFinancing = () => {
               with plans tailored to fit your budget and lifestyle.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
-              <ScrollLink
-              to="financing-partners"
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900 cursor-pointer"
-            >
-              Apply Now
-            </ScrollLink>
+              <button
+                onClick={() => setShowPartners(!showPartners)}
+                className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto"
+              >
+                {showPartners ? "Hide Financing Partners" : "Show Financing Partners"}
               </button>
               <a
                 href="tel:1234567890"
@@ -197,16 +194,12 @@ const DentalFinancing = () => {
               started on your journey to stress-free financing.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              {/* Updated Apply Online button using ScrollLink for smooth scrolling */}
-              <ScrollLink
-                to="financing-partners"
-                smooth={true}
-                offset={-80} // Adjust offset if necessary
-                duration={500}
+              <button
+                onClick={() => setShowPartners(!showPartners)}
                 className="bg-blue-800 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition cursor-pointer"
               >
-                Apply Online
-              </ScrollLink>
+                {showPartners ? "Hide Financing Partners" : "Show Financing Partners"}
+              </button>
               <a
                 href="tel:1234567890"
                 className="text-blue-600 font-semibold hover:underline"
@@ -215,33 +208,35 @@ const DentalFinancing = () => {
               </a>
             </div>
             <p className="mt-4 text-gray-600 text-sm">
-              Click "Apply Online" to view our Financing Partners below.
+              Click the button to view our Financing Partners below.
             </p>
           </div>
           {/* Financing Partners Section */}
-          <div id="financing-partners" className="max-w-7xl mx-auto px-6 mb-16 mt-28">
-            <h3 className="text-2xl font-bold text-blue-800 text-center mb-4 mt-16">
-              Financing Partners
-            </h3>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="https://apply.sunbit.com/Zfamilyandcosmeticdentistry"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-800 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition py-16"
-              >
-                Sunbit
-              </a>
-              <a
-                href="https://www.carecredit.com/go/224CCK/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-800 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition"
-              >
-                CareCredit
-              </a>
+          {showPartners && (
+            <div id="financing-partners" className="max-w-7xl mx-auto px-6 mb-16 mt-28">
+              <h3 className="text-2xl font-bold text-blue-800 text-center mb-4 mt-16">
+                Financing Partners
+              </h3>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <a
+                  href="https://apply.sunbit.com/Zfamilyandcosmeticdentistry"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-800 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition py-16"
+                >
+                  Sunbit
+                </a>
+                <a
+                  href="https://www.carecredit.com/go/224CCK/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-800 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition"
+                >
+                  CareCredit
+                </a>
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </Fade>
       <Fade direction="up">
