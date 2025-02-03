@@ -54,8 +54,8 @@ const Team = () => {
       }}
     >
       {/* Meet Your Doctor Section */}
-      <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <Heading title="Meet Your Doctor" subtitle="Your Doctor" />
+      <section className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
+        <Heading title="Meet Your Doctor" subtitle="Our Team" />
         <div className="flex flex-col space-y-8">
           <Fade direction="left">
             <div className="px-6 bg-white rounded-[4rem] rounded-bl-md rounded-tr-md overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl flex flex-col md:flex-row h-96">
@@ -90,7 +90,9 @@ const Team = () => {
 
       {/* Meet Our Dedicated Team Section */}
       <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <Heading title="Meet Our Dedicated Team" subtitle="Our Team" />
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-blue-800">Our Team</h2>
+        </div>
         <div className="grid gap-8 row-gap-12 sm:grid-cols-1 lg:grid-cols-3">
           {teamMembers.map((member, index) => (
             <Fade key={index} direction="left">
