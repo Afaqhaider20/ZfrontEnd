@@ -25,7 +25,12 @@ const ToothExtraction = () => {
       {/* Hero Section */}
       <header
         className="relative bg-blue-700 text-white py-16 px-6"
-        style={{ backgroundImage: "url('/Images/background1.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center',backgroundBlendMode: "overlay"}}
+        style={{
+          backgroundImage: "url('/Images/background1.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundBlendMode: "overlay",
+        }}
       >
         <div className="absolute inset-0 bg-blue-900 opacity-60"></div>
         <div className="relative max-w-7xl mx-auto text-center">
@@ -40,10 +45,16 @@ const ToothExtraction = () => {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
               <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
-                Book Appointment
+                <a
+                  href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Appointment
+                </a>
               </button>
               <a
-                href="tel:1234567890"
+                href="tel:(386) 574-7272"
                 className="font-bold text-white flex items-center text-lg"
               >
                 Call (386) 574-7272
@@ -68,7 +79,7 @@ const ToothExtraction = () => {
                   Expert Dental Team
                 </h3>
                 <p className="mt-4 text-gray-700">
-                  Our highly trained dentist have successfully performed
+                  Our highly trained dentist has successfully performed
                   thousands of tooth extractions, ensuring a smooth and
                   comfortable experience for you.
                 </p>
@@ -119,21 +130,21 @@ const ToothExtraction = () => {
             </ul>
           </Fade>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-  <a
-    href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 py-2 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
-  >
-    Book Appointment
-  </a>
-  <a
-    href="tel:(386) 574-7272"
-    className="font-bold text-blue-700 flex items-center text-lg"
-  >
-    Call (386) 574-7272
-  </a>
-</div>
+            <a
+              href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 py-2 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
+            >
+              Book Appointment
+            </a>
+            <a
+              href="tel:(386) 574-7272"
+              className="font-bold text-blue-700 flex items-center text-lg"
+            >
+              Call (386) 574-7272
+            </a>
+          </div>
         </div>
       </section>
       {/* Benefits of Extraction */}
@@ -146,7 +157,11 @@ const ToothExtraction = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
               <div>
                 <div className="h-48 rounded-lg overflow-hidden">
-                  <img src="/Images/TE/te1.avif" alt="Tooth Extraction Benefit 1" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/TE/te1.avif"
+                    alt="Tooth Extraction Benefit 1"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="mt-6 text-gray-700">
                   Extracting a severely damaged or infected tooth prevents the
@@ -156,7 +171,11 @@ const ToothExtraction = () => {
               </div>
               <div>
                 <div className="h-48 rounded-lg overflow-hidden">
-                  <img src="/Images/TE/te2.jpg" alt="Tooth Extraction Benefit 2" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/TE/te2.jpg"
+                    alt="Tooth Extraction Benefit 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="mt-6 text-gray-700">
                   It creates space for orthodontic treatments or dental

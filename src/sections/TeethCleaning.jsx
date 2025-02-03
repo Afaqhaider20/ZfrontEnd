@@ -25,7 +25,12 @@ const TeethCleaning = () => {
       {/* Hero Section */}
       <header
         className="relative bg-blue-700 text-white py-16 px-6"
-        style={{ backgroundImage: `url(/Images/backgroundTexture.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: "overlay" }}
+        style={{
+          backgroundImage: `url(/Images/backgroundTexture.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundBlendMode: "overlay",
+        }}
       >
         <div className="absolute inset-0 bg-blue-900 opacity-60"></div>
         <div className="relative max-w-7xl mx-auto text-center">
@@ -39,22 +44,22 @@ const TeethCleaning = () => {
               optimal oral health.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-  <a
-    href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mb-1 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 py-2 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
-  >
-    Book Appointment
-  </a>
-  <a
-    href="tel:1234567890"
-    className="font-bold text-white flex items-center text-lg"
-  >
-    Call (386) 574-7272
-  </a>
-</div>
-
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                <a
+                  href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Appointment
+                </a>
+              </button>
+              <a
+                href="tel:(386) 574-7272"
+                className="font-bold text-white flex items-center text-lg"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
           </Fade>
         </div>
       </header>
@@ -151,18 +156,28 @@ const TeethCleaning = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
               <div>
                 <div className="h-48 rounded-lg overflow-hidden">
-                  <img src="/Images/TC/tc.jpg" alt="Teeth Cleaning Benefit 1" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/TC/tc.jpg"
+                    alt="Teeth Cleaning Benefit 1"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="mt-6 text-gray-700">
-                  Prevent long-term dental issues and save on expensive treatments with regular cleanings.
+                  Prevent long-term dental issues and save on expensive
+                  treatments with regular cleanings.
                 </p>
               </div>
               <div>
                 <div className="h-48 rounded-lg overflow-hidden">
-                  <img src="/Images/TC/tc4.jpeg" alt="Teeth Cleaning Benefit 2" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/TC/tc4.jpeg"
+                    alt="Teeth Cleaning Benefit 2"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <p className="mt-6 text-gray-700">
-                  Maintain a bright, healthy smile that boosts your confidence and overall well-being.
+                  Maintain a bright, healthy smile that boosts your confidence
+                  and overall well-being.
                 </p>
               </div>
             </div>
@@ -170,8 +185,7 @@ const TeethCleaning = () => {
         </div>
       </section>
       {/* FAQ Section */}
-      <Faq faqs={faqData} sectionTitle="Teeth Cleaning FAQs" />{" "}
-      {/* Footer */}
+      <Faq faqs={faqData} sectionTitle="Teeth Cleaning FAQs" /> {/* Footer */}
       <footer className="py-8 bg-blue-700 text-white text-center">
         <p className="text-lg">
           Ready to keep your smile healthy and bright? Contact us today to

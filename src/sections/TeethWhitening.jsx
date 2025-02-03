@@ -25,7 +25,12 @@ const TeethWhitening = () => {
       {/* Hero Section */}
       <header
         className="relative bg-blue-700 text-white py-16 px-6"
-        style={{ backgroundImage: `url(/Images/backgroundTexture.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: "overlay" }}
+        style={{
+          backgroundImage: `url(/Images/backgroundTexture.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundBlendMode: "overlay",
+        }}
       >
         <div className="absolute inset-0 bg-blue-900 opacity-60"></div>
         <div className="relative max-w-7xl mx-auto text-center">
@@ -41,22 +46,23 @@ const TeethWhitening = () => {
             </p>
           </Fade>
           <Fade direction="up">
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-  <a
-    href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 py-2 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
-  >
-    Book Appointment
-  </a>
-  <a
-    href="tel:1234567890"
-    className="font-bold text-white flex items-center text-lg"
-  >
-    Call (386) 574-7272
-  </a>
-</div>
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                <a
+                  href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Appointment
+                </a>
+              </button>
+              <a
+                href="tel:(386) 574-7272"
+                className="font-bold text-white flex items-center text-lg"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
           </Fade>
         </div>
       </header>
@@ -76,12 +82,15 @@ const TeethWhitening = () => {
           </Fade>
           <div className="mt-12 flex justify-center">
             <div className="h-80 w-full max-w-3xl rounded-lg overflow-hidden">
-              <img src="/Images/TW/tw2.jpg" alt="Whitening Process" className="w-full h-full object-cover" />
+              <img
+                src="/Images/TW/tw2.jpg"
+                alt="Whitening Process"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
-      
       {/* Whitening vs. Bleaching Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -94,8 +103,8 @@ const TeethWhitening = () => {
                 <h3 className="text-xl font-bold mb-2">Teeth Whitening</h3>
                 <p>
                   Teeth whitening focuses on removing stains and discoloration
-                  from the surface of your teeth. It&apos;s an excellent option for
-                  restoring your teeth&apos;s natural color and brightness.
+                  from the surface of your teeth. It&apos;s an excellent option
+                  for restoring your teeth&apos;s natural color and brightness.
                 </p>
               </div>
               <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-lg text-white shadow-md">
@@ -118,7 +127,8 @@ const TeethWhitening = () => {
               How Much Does Teeth Whitening Cost?
             </h2>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              For the cost of the procedure, please contact us or call our office.
+              For the cost of the procedure, please contact us or call our
+              office.
             </p>
           </Fade>
         </div>

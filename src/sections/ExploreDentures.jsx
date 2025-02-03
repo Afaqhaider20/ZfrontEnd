@@ -48,22 +48,23 @@ const ExploreDentures = () => {
             </p>
           </Fade>
           <Fade direction="up">
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-  <a
-    href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 py-2 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
-  >
-    Book Appointment
-  </a>
-  <a
-    href="tel:1234567890"
-    className="font-bold text-white flex items-center text-lg"
-  >
-    Call (386) 574-7272
-  </a>
-</div>
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                <a
+                  href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Appointment
+                </a>
+              </button>
+              <a
+                href="tel:(386) 574-7272"
+                className="font-bold text-white flex items-center text-lg"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
           </Fade>
         </div>
       </section>
@@ -84,7 +85,11 @@ const ExploreDentures = () => {
             <Fade direction="up">
               <div className="rounded-lg bg-white shadow-lg p-6 transform transition hover:scale-105">
                 <div className="h-40 rounded-md mb-4 flex items-center justify-center overflow-hidden">
-                  <img src="/Images/D/d1.png" alt="Full Dentures" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/D/d1.png"
+                    alt="Full Dentures"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold">Full Dentures</h3>
                 <p className="mt-4 text-gray-700">
@@ -98,7 +103,11 @@ const ExploreDentures = () => {
             <Fade direction="up">
               <div className="rounded-lg bg-white shadow-lg p-6 transform transition hover:scale-105">
                 <div className="h-40 rounded-md mb-4 flex items-center justify-center overflow-hidden">
-                  <img src="/Images/D/d2.png" alt="Partial Dentures" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/D/d2.png"
+                    alt="Partial Dentures"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold">Partial Dentures</h3>
                 <p className="mt-4 text-gray-700">
@@ -112,7 +121,11 @@ const ExploreDentures = () => {
             <Fade direction="up">
               <div className="rounded-lg bg-white shadow-lg p-6 transform transition hover:scale-105">
                 <div className="h-40 rounded-md mb-4 flex items-center justify-center overflow-hidden">
-                  <img src="/Images/D/d3.png" alt="Implant-Supported Dentures" className="w-full h-full object-cover" />
+                  <img
+                    src="/Images/D/d3.png"
+                    alt="Implant-Supported Dentures"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-xl font-bold">
                   Implant-Supported Dentures

@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h2>
             <p className="mt-2 text-sm text-blue-700">
-              Effective Date: [Insert Date]
+              Effective Date: Feb 2025
             </p>
           </div>
           <div className="mt-6 text-gray-800 space-y-6">
@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
             </div>
             <p>
               If you have questions or concerns about our privacy practices,
-              contact us at [Insert Contact Information].
+              contact us at (386) 574-7272.
             </p>
           </div>
         </div>

@@ -1,12 +1,14 @@
 import { Fade } from "react-awesome-reveal";
-import { Link } from "react-scroll";
-import { Heart, SmilePlus, CheckCircle, Shield } from "lucide-react";
+import { Heart, SmilePlus, CheckCircle, Shield, Home } from "lucide-react";
 
 const Hero = () => {
   return (
     <main>
-      <div className="relative bg-gradient-to-b from-white to-blue-50" name="home">
-        <div className="mx-auto h-full px-4 py-6 sm:max-w-xl md:max-w-full md:px-24 md:py-40 lg:px-8">
+      <div
+        className="relative bg-gradient-to-b from-white to-blue-50"
+        name="home"
+      >
+        <div className="mx-auto h-full px-4 py-6 sm:max-w-xl md:max-w-full md:px-24 md:py-[7.5rem] lg:px-8">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="">
               <div className="lg:max-w-xl lg:pr-5">
@@ -21,29 +23,25 @@ const Hero = () => {
 
                 <Fade>
                   {/* Added Family Owned and Operated tagline */}
-                  <p className="text-lg font-medium text-blue-700 mb-4">
-                    Family Owned and Operated
-                  </p>
                   <p className="text-base text-gray-700 mt-4">
                     At Z Family & Cosmetic Dentistry, we are committed to
                     harmonizing oral health and creating beautiful smiles. Our
                     modern dental care brings confidence and wellness to your
-                    life. Experience the highest standard of dental care with our
-                    dedicated team of professionals.
+                    life. Experience the highest standard of dental care with
+                    our dedicated team of professionals.
                   </p>
                 </Fade>
               </div>
               <Fade direction="up">
                 <div className="mt-10 flex flex-col items-center md:flex-row">
-                  <Link
-                    to="contact"
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    className="mb-3 inline-flex h-12 w-full items-center justify-center rounded border border-blue-900 bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900"
+                  <a
+                    href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-lg bg-blue-900 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-white hover:text-blue-900 border border-blue-900"
                   >
                     Book Appointment
-                  </Link>
+                  </a>
                   <a
                     href="tel:(386)574-7272"
                     className="ml-4 font-bold text-blue-900 flex items-center text-lg hover:text-blue-700"
@@ -51,13 +49,20 @@ const Hero = () => {
                     Call (386) 574-7272
                   </a>
                 </div>
-              
+
+                <div className="mt-12 flex flex-col space-y-3 text-md font-bold text-blue-900 sm:flex-row sm:space-y-0 sm:divide-x sm:divide-gray-300">
+                  <div className="flex space-x-3 px-4 items-center">
+                    <Home className="h-8 w-8 text-yellow-600" strokeWidth={2} />
+                    <p>Proudly family owned and operated.</p>
+                  </div>
+                </div>
                 <div className="mt-12 flex flex-col space-y-3 text-sm text-gray-700 sm:flex-row sm:space-y-0 sm:divide-x sm:divide-gray-300">
                   <div className="flex max-w-xs space-x-3 px-4">
-                    <CheckCircle className="h-8 w-8 text-emerald-600" strokeWidth={2} />
-                    <p>
-                      Comprehensive, quality dental care.
-                    </p>
+                    <CheckCircle
+                      className="h-8 w-8 text-emerald-600"
+                      strokeWidth={2}
+                    />
+                    <p>Comprehensive, quality dental care.</p>
                   </div>
                   <div className="flex max-w-xs space-x-3 px-4">
                     <Shield className="h-8 w-8 text-blue-600" strokeWidth={2} />
@@ -66,7 +71,7 @@ const Hero = () => {
                 </div>
               </Fade>
             </div>
-            
+
             <div className="relative hidden lg:ml-32 lg:block lg:w-1/2">
               <div
                 className="w-fit rounded-[6rem] mx-auto overflow-hidden rounded-tl-md rounded-br-md max-h-[500px]"
@@ -76,9 +81,13 @@ const Hero = () => {
                   backgroundPosition: "center",
                   backgroundBlendMode: "overlay",
                 }}
-              >      
+              >
                 <Fade direction="right">
-                  <img className="-mb-20" src="/Images/doctors3.png" alt="hero portrait" />
+                  <img
+                    className="-mb-20"
+                    src="/Images/doctors3.png"
+                    alt="hero portrait"
+                  />
                 </Fade>
               </div>
               {/* Floating Icons */}

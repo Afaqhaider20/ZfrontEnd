@@ -25,7 +25,7 @@ const Services = () => {
       image: "/Images/CosmaticDentistry.jpg",
       links: [
         { id: 1, link: "/Teeth-Whitening", label: "Teeth Whitening" },
-        { id: 2, link: "/Veneers", label: "Veneers" },
+        { id: 2, link: "/Aesthetic-Crowns-and-Veneers", label: "Aesthatic Crowns & Veneers" },
       ],
     },
     {
