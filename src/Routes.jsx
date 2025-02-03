@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import TeethCleaning from "./sections/TeethCleaning";
 import CavityFilling from "./sections/CavityFilling";
 import ToothExtraction from "./sections/ToothExtraction";
-import Vaneers from "./sections/Veneers";
 import TeethWhitening from "./sections/TeethWhitening"; 
 import DentalImplants from "./sections/DentalImplants";
 import CrownsAndBridges from "./sections/CrownsAndBridges";
@@ -19,6 +18,7 @@ import InsuranceAndFinancing from "./pages/InsuranceAndFinancing";
 import OurPrivacyPolicy from "./pages/OurPrivacyPolicy";
 import OurMissionAndVision from "./pages/OurMissionAndVision";
 import NotFound from "./components/404";
+import AestheticCrownsAndVeneers from "./sections/Veneers"; // updated import
 
 const AppRoutes = () => {
   return (
@@ -28,10 +28,11 @@ const AppRoutes = () => {
       <Route path="/Cavity-filling" element={<CavityFilling />} />
       <Route path="/Tooth-extraction" element={<ToothExtraction />} />
       <Route path="/Teeth-Whitening" element={<TeethWhitening />} />
-      <Route path="/Veneers" element={<Vaneers />} />
+      {/* Updated route: note the path now reflects the new service name */}
+      <Route path="/Aesthetic-Crowns-and-Veneers" element={<AestheticCrownsAndVeneers />} />
       <Route path="/Dental-Implants" element={<DentalImplants />} />
       <Route path="/Crowns-and-Bridges" element={<CrownsAndBridges />} />
-      <Route path="/Explore-Dentures" element={<ExploreDentures/>} />
+      <Route path="/Explore-Dentures" element={<ExploreDentures />} />
       <Route path="/Compare-Dentures" element={<CompareDenture />} />
       <Route path="/Root-Canal" element={<RootCanal />} />
       <Route path="/Financing" element={<DentalFinancing />} />

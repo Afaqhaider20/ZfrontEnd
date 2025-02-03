@@ -129,7 +129,7 @@ const Contact = () => {
                 onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
               />
               <span className="ml-2 text-gray-700">
-                I agree to receive SMS messages. For details, refer to our{" "}
+                I agree to receive text messages. For details, refer to our{" "}
                 <button
                   type="button"
                   className="text-blue-600 underline"

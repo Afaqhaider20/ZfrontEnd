@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { animateScroll } from 'react-scroll';
 
-
-
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
@@ -13,9 +11,9 @@ const Navbar = () => {
 
   useEffect(() => {
     animateScroll.scrollToTop({
-      duration: 0
+      duration: 0,
     });
-}, [location.pathname]);
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,8 +68,9 @@ const Navbar = () => {
         },
         {
           id: 2,
-          link: "/Veneers",
-          label: "Veneers",
+          // Updated link and label:
+          link: "/Aesthetic-Crowns-and-Veneers",
+          label: "Aesthetic Crowns & Veneers",
         },
       ],
     },
@@ -160,10 +159,13 @@ const Navbar = () => {
     setActiveLink(activeLink === id ? null : id);
   };
 
+  // External appointment URL for the Book Appointment button
+  const appointmentURL = "https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE";
+
   return (
     <header
       className={`fixed w-full flex items-center justify-between px-4 py-1 transition-all${
-        showNavbar ? "bg-white shadow-md text-blue-900" : "text-white"
+        showNavbar ? " bg-white shadow-md text-blue-900" : " text-white"
       }`}
       style={{
         zIndex: showMenu ? 999 : "10",
@@ -172,7 +174,7 @@ const Navbar = () => {
         backgroundPosition: 'center',
         borderBottom: '3px solid',
         borderImage: 'linear-gradient(to right, lightgray, silver) 1',
-        height: '4.7rem', 
+        height: '4.7rem',
       }}
     >
       <Link
@@ -184,14 +186,14 @@ const Navbar = () => {
         <img src="/Images/logo5.png" alt="ZFC Dentistry Logo" className="drop-shadow-lg mr-1 h-[7rem] w-[7rem] mt-1 z-50" />
       </Link>
 
-      <nav className="hidden lg:flex flex-1 justify-center"> 
+      <nav className="hidden lg:flex flex-1 justify-center">
         <ul className="flex items-center space-x-6 px-1">
           {links.map(({ id, link, label, items }) => (
             <li key={id} className="relative group">
               <Link
                 onClick={scrollToTop}
                 to={link}
-                className={`drop-shadow-xl cursor-pointer font-semibold hover:text-blue-400 text-white text-lg`}
+                className="drop-shadow-xl cursor-pointer font-semibold hover:text-blue-400 text-white text-lg"
               >
                 {label}
               </Link>
@@ -213,12 +215,15 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <Link
-        to="/contact"
+      {/* Updated Book Appointment button (desktop) */}
+      <a
+        href={appointmentURL}
+        target="_blank"
+        rel="noopener noreferrer"
         className="hidden lg:inline-flex mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
       >
         Book Appointment
-      </Link>
+      </a>
 
       <div className="lg:hidden">
         <button
@@ -299,14 +304,17 @@ const Navbar = () => {
                 )}
               </li>
             ))}
+            {/* Updated Book Appointment button (mobile) */}
             <li className="w-full">
-              <Link
-                to="/contact"
+              <a
+                href={appointmentURL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full mx-3 my-6 inline-flex h-12 items-center justify-center rounded-lg bg-blue-900 px-12 py-3 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900"
                 onClick={toggleMenu}
               >
                 Book Appointment
-              </Link>
+              </a>
             </li>
           </ul>
         )}

@@ -20,6 +20,23 @@ const ContactUs = () => {
             <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
               We are here to help you with any questions or concerns you may have. Reach out to us and we will get back to you as soon as possible.
             </p>
+            {/* Buttons Container */}
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <a
+                href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg bg-blue-900 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-white hover:text-blue-900 border border-blue-900"
+              >
+                Book Appointment
+              </a>
+              <a
+                href="tel:(386)574-7272"
+                className="inline-flex items-center justify-center rounded-lg bg-blue-900 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-white hover:text-blue-900 border border-blue-900"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
           </Fade>
         </div>
       </section>
