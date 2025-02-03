@@ -128,8 +128,8 @@ const ToothExtraction = () => {
     Book Appointment
   </a>
   <a
-    href="tel:1234567890"
-    className="font-bold text-white flex items-center text-lg"
+    href="tel:(386) 574-7272"
+    className="font-bold text-blue-700 flex items-center text-lg"
   >
     Call (386) 574-7272
   </a>
@@ -156,7 +156,7 @@ const ToothExtraction = () => {
               </div>
               <div>
                 <div className="h-48 rounded-lg overflow-hidden">
-                  <img src="/Images/TE/TE2.jpg" alt="Tooth Extraction Benefit 2" className="w-full h-full object-cover" />
+                  <img src="/Images/TE/te2.jpg" alt="Tooth Extraction Benefit 2" className="w-full h-full object-cover" />
                 </div>
                 <p className="mt-6 text-gray-700">
                   It creates space for orthodontic treatments or dental
