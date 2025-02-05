@@ -3,42 +3,56 @@ import Heading from "./Heading";
 
 const doctors = [
   {
-    name: "Dr. Jane Doe",
+    name: "Dr. Fatima A Butt DDS",
     role: "Your Doctor",
     description:
-      "Dr. Jane Doe is a compassionate and experienced physician dedicated to your health and well-being. In her free time, she enjoys hiking, painting, and spending time with her family.",
-    image: "/Images/chance.jpg",
+      "Dr. Fatima A Butt DDS is a compassionate and experienced physician dedicated to your health and well-being. In her free time, she enjoys hiking, painting, and spending time with her family.",
+    image: "https://via.placeholder.com/150",
   },
   {
-    name: "Dr. John Smith",
+    name: "Dr. Steven J Smith DMD",
     role: "Retired Doctor",
     description:
-      "Dr. John Smith served our community for over 30 years. He is now retired and enjoys gardening, reading, and traveling with his wife.",
-    image: "/Images/chance.jpg",
+      "Dr. Steven J Smith DMD served our community for over 30 years. He is now retired and enjoys gardening, reading, and traveling with his wife.",
+    image: "https://via.placeholder.com/150",
   },
 ];
 
 const teamMembers = [
   {
-    name: "Dr. John Doe",
-    role: "General Dentist",
+    name: "Mary A Coffman RDH",
+    role: "Dental Hygienist",
     description:
-      "With over 20 years of experience, Dr. John Doe is dedicated to providing the best dental care possible.",
-    image: "/Images/chance.jpg",
+      "Mary A Coffman RDH is dedicated to providing the best dental care possible.",
+    image: "https://via.placeholder.com/150",
   },
   {
-    name: "Dr. Jane Smith",
-    role: "Cosmetic Dentist",
+    name: "Saad Aslam CRDH",
+    role: "Dental Hygienist",
     description:
-      "Dr. Jane Smith specializes in cosmetic dentistry and is passionate about creating beautiful smiles.",
-    image: "/Images/chance.jpg",
+      "Saad Aslam CRDH specializes in dental hygiene and is passionate about creating beautiful smiles.",
+    image: "https://via.placeholder.com/150",
   },
   {
-    name: "Dr. Michael Johnson",
-    role: "Restorative Dentist",
+    name: "Bonnie L Byrnes EFDA",
+    role: "Dental Assistant",
     description:
-      "Dr. Michael Johnson is an expert in restorative dentistry and is committed to restoring your smile.",
-    image: "/Images/chance.jpg",
+      "Bonnie L Byrnes EFDA is an expert in dental assistance and is committed to restoring your smile.",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Rina Lantigua EFDA",
+    role: "Dental Assistant",
+    description:
+      "Rina Lantigua EFDA is dedicated to providing the best dental care possible.",
+    image: "https://via.placeholder.com/150",
+  },
+  {
+    name: "Mayraliz Rodriguez",
+    role: "Administrative Assistant",
+    description:
+      "Mayraliz Rodriguez ensures the smooth operation of our office and is committed to providing excellent service.",
+    image: "https://via.placeholder.com/150",
   },
 ];
 
@@ -64,7 +78,7 @@ const Team = () => {
                 src={doctors[0].image || "/placeholder.svg?height=400&width=300"}
                 alt={doctors[0].name}
               />
-              <div className="p-6 md:w-1/2">
+              <div className="p-6 md:w-1/2 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-blue-800">{doctors[0].name}</h3>
                 <p className="text-lg text-blue-600">{doctors[0].role}</p>
                 <p className="text-gray-600 mt-4">{doctors[0].description}</p>
@@ -78,7 +92,7 @@ const Team = () => {
                 src={doctors[1].image || "/placeholder.svg?height=400&width=300"}
                 alt={doctors[1].name}
               />
-              <div className="p-6 md:w-1/2">
+              <div className="p-6 md:w-1/2 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-blue-800">{doctors[1].name}</h3>
                 <p className="text-lg text-blue-600">{doctors[1].role}</p>
                 <p className="text-gray-600 mt-4">{doctors[1].description}</p>
@@ -96,8 +110,8 @@ const Team = () => {
         <div className="grid gap-8 row-gap-12 sm:grid-cols-1 lg:grid-cols-3">
           {teamMembers.map((member, index) => (
             <Fade key={index} direction="left">
-              <div className="bg-white rounded-[4rem] rounded-bl-md rounded-tr-md overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl max-w-sm mx-auto">
-                <div className="relative">
+              <div className="bg-white rounded-[4rem] rounded-bl-md rounded-tr-md overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-2xl flex flex-col h-96">
+                <div className="relative flex-shrink-0">
                   <img
                     className="w-full h-64 object-cover"
                     src={member.image || "/placeholder.svg?height=400&width=300"}
@@ -108,7 +122,7 @@ const Team = () => {
                     <p className="text-sm text-blue-300">{member.role}</p>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow flex flex-col justify-center">
                   <p className="text-gray-600">{member.description}</p>
                 </div>
               </div>

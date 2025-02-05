@@ -166,12 +166,10 @@ const ExploreDentures = () => {
         <div className="max-w-7xl mx-auto px-6 text-center">
           <Fade direction="down">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Restore Your Smile for Less
+              Restore Your Smile with Our Custom Dentures
             </h2>
             <p className="mt-6 text-lg md:text-xl">
-              Get 25% off custom dentures today! Book an appointment or visit
-              one of our locations to take the first step toward your new smile.
-              Embrace the confidence of a radiant smile.
+              Book an appointment or visit our office to take the first step toward your new smile. Embrace the confidence of a radiant smile with our expertly crafted dentures.
             </p>
           </Fade>
           <Fade direction="up">

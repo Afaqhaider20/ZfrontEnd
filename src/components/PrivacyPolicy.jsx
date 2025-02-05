@@ -37,40 +37,40 @@ const PrivacyPolicy = ({ onClose, onAgree }) => {
             Privacy Policy
           </h2>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-blue-900 uppercase rounded-full bg-blue-100">
-            Effective Date: [Insert Date]
+            Effective Date:  01/01/2025
           </p>
         </div>
         <div className="text-justify">
           <p className="mb-4 text-base text-blue-900">
-            Z Family & Cosmetic Dentistry respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share information when you opt in to receive SMS messages from us.
+            Z Family & Cosmetic Dentistry respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, and share information when you opt in to receive text messages from us.
           </p>
           <p className="mb-4 text-sm text-blue-800">
             <strong>Information We Collect</strong>
             <br />
-            When you opt in to receive SMS messages, we collect:
+            When you opt in to receive text messages, we collect:
             <br />
             • Your phone number
             <br />
-            • Consent to send SMS messages
+            • Consent to send text messages
           </p>
           <p className="mb-4 text-sm text-blue-800">
             <strong>How We Use Your Information</strong>
             <br />
             We use your information to:
             <br />
-            • Send you the SMS messages you’ve opted in to receive
+            • Send you the text messages you’ve opted in to receive
             <br />
             • Provide updates, promotions, or other relevant content based on your preferences
           </p>
           <p className="mb-4 text-sm text-blue-800">
             <strong>Sharing Your Information</strong>
             <br />
-            We do not share your phone number or SMS opt-in information with third parties for marketing purposes.
+            We do not share your phone number or text opt-in information with third parties for marketing purposes.
           </p>
           <p className="mb-4 text-sm text-blue-800">
             <strong>Your Rights</strong>
             <br />
-            You can opt out of receiving SMS messages at any time by replying with “STOP” to any message we send you.
+            You can opt out of receiving text messages at any time by replying with “STOP” to any message we send you.
           </p>
           <p className="mb-4 text-sm text-blue-800">
             <strong>Data Security</strong>
@@ -78,7 +78,7 @@ const PrivacyPolicy = ({ onClose, onAgree }) => {
             We implement reasonable measures to protect your personal information from unauthorized access or disclosure.
           </p>
           <p className="mb-4 text-sm text-blue-800">
-            If you have questions or concerns about our privacy practices, contact us at [Insert Contact Information].
+            If you have questions or concerns about our privacy practices, contact us at (386) 574-7272.
           </p>
         </div>
         <div className="mt-4 text-center">

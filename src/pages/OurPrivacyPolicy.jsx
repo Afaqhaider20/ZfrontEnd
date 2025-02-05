@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
               Privacy Policy
             </h2>
             <p className="mt-2 text-sm text-blue-700">
-              Effective Date: Feb 2025
+              Effective Date: 01/01/2025
             </p>
           </div>
           <div className="mt-6 text-gray-800 space-y-6">
@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
               Z Family & Cosmetic Dentistry respects your privacy and is
               committed to protecting your personal information. This Privacy
               Policy explains how we collect, use, and share information when you
-              opt in to receive SMS messages from us.
+              opt in to receive text messages from us.
             </p>
             <div>
               <h3 className="text-lg font-semibold text-blue-800">
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
               </h3>
               <ul className="list-disc list-inside">
                 <li>Your phone number</li>
-                <li>Consent to send SMS messages</li>
+                <li>Consent to send text messages</li>
               </ul>
             </div>
             <div>
@@ -31,7 +31,7 @@ const PrivacyPolicy = () => {
                 How We Use Your Information
               </h3>
               <ul className="list-disc list-inside">
-                <li>Send you the SMS messages you’ve opted in to receive</li>
+                <li>Send you the text messages you’ve opted in to receive</li>
                 <li>Provide updates, promotions, or other relevant content</li>
               </ul>
             </div>
@@ -40,14 +40,14 @@ const PrivacyPolicy = () => {
                 Sharing Your Information
               </h3>
               <p>
-                We do not share your phone number or SMS opt-in information with
+                We do not share your phone number or text opt-in information with
                 third parties for marketing purposes.
               </p>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-blue-800">Your Rights</h3>
               <p>
-                You can opt out of receiving SMS messages at any time by replying
+                You can opt out of receiving text messages at any time by replying
                 with “STOP” to any message we send you.
               </p>
             </div>
@@ -71,4 +71,3 @@ const PrivacyPolicy = () => {
   };
   
   export default PrivacyPolicy;
-  
