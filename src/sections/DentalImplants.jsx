@@ -202,7 +202,7 @@ const DentalImplants = () => {
       {/* FAQ Section */}
       <FAQs faqs={faqs} sectionTitle="FAQs about Dental Implants" />
       {/* CTA Section */}
-      <section className="bg-blue-700 text-white py-16">
+      <section className="bg-blue-700 text-white py-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Get Started Today

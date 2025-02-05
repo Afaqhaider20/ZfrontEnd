@@ -42,7 +42,7 @@ const CavityFilling = () => {
               fillings. Our treatments are quick, effective, and designed to
               last.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 text-center">
               <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
                 <a
                   href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
@@ -54,7 +54,7 @@ const CavityFilling = () => {
               </button>
               <a
                 href="tel:(386) 574-7272"
-                className="font-bold text-white flex items-center text-lg"
+                className="font-bold text-white flex items-center text-lg text-center"
               >
                 Call (386) 574-7272
               </a>
@@ -209,13 +209,13 @@ const CavityFilling = () => {
             </p>
           </Fade>
           <Fade direction="up">
-            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4 text-center">
               <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
                 Book Now
               </button>
               <a
                 href="tel:(386) 574-7272"
-                className="font-bold text-white flex items-center text-lg"
+                className="font-bold text-white flex items-center text-lg text-center"
               >
                 Call (386) 574-7272
               </a>
