@@ -43,14 +43,14 @@ const AestheticCrownsAndVeneers = () => {
               beautiful, natural-looking smile.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
-              <a
-                href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Book Appointment
-              </a>
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                <a
+                  href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Appointment
+                </a>
               </button>
               <a
                 href="tel:(386) 574-7272"
@@ -71,9 +71,9 @@ const AestheticCrownsAndVeneers = () => {
               What Are Aesthetic Crowns & Veneers?
             </h2>
             <p className="mt-6 text-lg text-center text-gray-700">
-              Aesthetic crowns & veneers are thin, custom-made shells. They are used to improve
-              your smile by correcting issues such as discoloration, chips, and
-              gaps.
+              Aesthetic crowns & veneers are thin, custom-made shells. They are
+              used to improve your smile by correcting issues such as
+              discoloration, chips, and gaps.
             </p>
             <div className="bg-gray-300 w-11/12 h-80 flex items-center justify-center mt-8 rounded-lg overflow-hidden mx-auto">
               <img
@@ -144,17 +144,21 @@ const AestheticCrownsAndVeneers = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-4">Porcelain Crowns & Veneers</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Porcelain Crowns & Veneers
+                </h3>
                 <p className="text-gray-700">
                   Porcelain crowns & veneers are highly durable and provide a
                   natural-looking appearance.
                 </p>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-4">Composite Crowns & Veneers</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Composite Crowns & Veneers
+                </h3>
                 <p className="text-gray-700">
-                  Composite crowns & veneers are a cost-effective option that can be
-                  applied in a single visit.
+                  Composite crowns & veneers are a cost-effective option that
+                  can be applied in a single visit.
                 </p>
               </div>
               <div className="text-center">
@@ -206,13 +210,33 @@ const AestheticCrownsAndVeneers = () => {
       {/* FAQ Section */}
       <Faq faqs={faqData} sectionTitle="Aesthetic Crowns & Veneers FAQs" />
 
-      {/* Footer */}
-      <footer className="py-8 bg-blue-700 text-white text-center">
-        <p className="text-lg">
-          Ready to enhance your smile? Contact us today to schedule your
-          aesthetic crowns & veneers consultation!
-        </p>
-      </footer>
+      {/* CTA Section */}
+      <section className="bg-blue-700 text-white py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <Fade direction="down">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Transform Your Smile with Aesthatic Crowns & Veneers
+            </h2>
+            <p className="mt-6 text-lg md:text-xl">
+              Book an appointment or visit our office to discover how veneers
+              can give you a radiant, movie-star smile.
+            </p>
+          </Fade>
+          <Fade direction="up">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                Book Now
+              </button>
+              <a
+                href="tel:(386) 574-7272"
+                className="font-bold text-white flex items-center text-lg"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
+          </Fade>
+        </div>
+      </section>
     </main>
   );
 };

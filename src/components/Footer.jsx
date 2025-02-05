@@ -3,7 +3,17 @@ const Footer = () => {
     <>
       <div className="w-full bg-blue-950 text-white text-sm px-4 py-4">
         <p className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-          Disclaimer: The information provided on this website is for educational purposes only and is not intended to replace professional dental advice, diagnosis, or treatment. The content is meant to offer general guidance on dental procedures and oral health. Any dental treatments, procedures, or recommendations should be discussed directly with a qualified dentist at our office. Please note that the outcome and lifespan of dental work can vary greatly depending on individual care, oral health, and other personal factors. Results may differ from person to person, and the information provided is not legally binding. We encourage you to schedule a consultation with one of our dental professionals for advice specific to your needs.
+          Disclaimer: The information provided on this website is for
+          educational purposes only and is not intended to replace professional
+          dental advice, diagnosis, or treatment. The content is meant to offer
+          general guidance on dental procedures and oral health. Any dental
+          treatments, procedures, or recommendations should be discussed
+          directly with a qualified dentist at our office. Please note that the
+          outcome and lifespan of dental work can vary greatly depending on
+          individual care, oral health, and other personal factors. Results may
+          differ from person to person, and the information provided is not
+          legally binding. We encourage you to schedule a consultation with one
+          of our dental professionals for advice specific to your needs.
         </p>
       </div>
       <footer className="w-full bg-blue-900 text-white px-4 py-16">
@@ -16,7 +26,11 @@ const Footer = () => {
                 title="Company"
                 className="inline-flex items-center"
               >
-                <img src="/Images/icon.png" alt="ZFC Dentistry Logo" className="w-8 h-8" />
+                <img
+                  src="/Images/icon.png"
+                  alt="ZFC Dentistry Logo"
+                  className="w-8 h-8"
+                />
                 <span className="ml-2 text-xl font-bold tracking-wide uppercase">
                   Z Family & Cosmetic Dentistry
                 </span>
@@ -95,6 +109,25 @@ const Footer = () => {
                   </svg>
                 </a>
               </div>
+            </div>
+          </div>
+          <div className="mt-10 text-center w-full mb-8 pt-8 border-t border-white sm:flex-row">
+            <h3 className="text-2xl font-bold mb-6 text-center">Restore Your Smile Today!</h3>
+            <div className="flex flex-col items-center justify-center space-y-4 md:space-y-0 md:flex-row md:space-x-4">
+              <a
+                href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 font-medium text-blue-900 shadow-md transition duration-200 hover:bg-blue-900 hover:text-white border border-white w-full md:w-auto"
+              >
+                Book Appointment
+              </a>
+              <a
+                href="tel:(386)574-7272"
+                className="font-bold text-white flex items-center justify-center text-lg hover:text-blue-600 transition-colors duration-300"
+              >
+                Call (386) 574-7272
+              </a>
             </div>
           </div>
           <div className="flex flex-col justify-between pt-5 pb-10 border-t border-white sm:flex-row">

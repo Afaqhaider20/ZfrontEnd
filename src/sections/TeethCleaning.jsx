@@ -186,12 +186,33 @@ const TeethCleaning = () => {
       </section>
       {/* FAQ Section */}
       <Faq faqs={faqData} sectionTitle="Teeth Cleaning FAQs" /> {/* Footer */}
-      <footer className="py-8 bg-blue-700 text-white text-center">
-        <p className="text-lg">
-          Ready to keep your smile healthy and bright? Contact us today to
-          schedule your teeth cleaning appointment!
-        </p>
-      </footer>
+      <section className="bg-blue-700 text-white py-16">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Ready to keep your smile healthy and bright?
+          </h2>
+          <p className="mt-6 text-lg md:text-xl">
+            Contact us today to schedule your teeth cleaning appointment!
+          </p>
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
+            <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+              <a
+                href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book Appointment
+              </a>
+            </button>
+            <a
+              href="tel:(386) 574-7272"
+              className="font-bold text-white flex items-center text-lg"
+            >
+              Call (386) 574-7272
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

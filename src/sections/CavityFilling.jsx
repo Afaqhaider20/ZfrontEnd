@@ -198,12 +198,31 @@ const CavityFilling = () => {
       {/* FAQ Section */}
       <FAQs faqs={faqs} sectionTitle="FAQs about Cavity Filling" />
       {/* Footer */}
-      <footer className="py-8 bg-blue-700 text-white text-center">
-        <p className="text-lg">
-          Ready to restore your smile? Contact us today to schedule your cavity
-          filling appointment!
-        </p>
-      </footer>
+      <section className="bg-blue-700 text-white py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <Fade direction="down">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Protect Your Smile with a Cavity Filling!
+            </h2>
+            <p className="mt-6 text-lg md:text-xl">
+              Book an appointment or visit our office to restore your teeth and prevent further decay. Our professional cavity fillings are quick, effective, and designed to last.
+            </p>
+          </Fade>
+          <Fade direction="up">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                Book Now
+              </button>
+              <a
+                href="tel:(386) 574-7272"
+                className="font-bold text-white flex items-center text-lg"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
+          </Fade>
+        </div>
+      </section>
     </main>
   );
 };

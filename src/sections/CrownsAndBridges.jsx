@@ -55,6 +55,7 @@ const CrownsAndBridges = () => {
           </Fade>
         </div>
       </section>
+      
       {/* What Are Crowns and Bridges Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-6">
@@ -182,13 +183,32 @@ const CrownsAndBridges = () => {
       {/* FAQ Section */}
       <Faq faqs={faqData} sectionTitle="FAQs about Crowns and bridges" />{" "}
       {/* Use the Faq component with faqs prop */}
-      {/* Footer Section */}
-      <footer className="py-8 bg-blue-700 text-white text-center">
-        <p className="text-lg">
-          Ready to restore your smile? Contact us today to schedule your
-          appointment and explore your crowns and bridges options.
-        </p>
-      </footer>
+      {/* CTA Section */}
+      <section className="bg-blue-700 text-white py-16">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <Fade direction="down">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Restore Your Smile with Crowns and Bridges!
+            </h2>
+            <p className="mt-6 text-lg md:text-xl">
+              Book an appointment or visit our office to explore how our high-quality crowns and bridges can enhance your smile and improve your dental health.
+            </p>
+          </Fade>
+          <Fade direction="up">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+              <button className="mb-3 h-12 items-center justify-center rounded-lg bg-blue-900 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 md:mr-4 md:mb-0 md:w-auto focus:outline-none hover:bg-white hover:text-blue-900 border border-blue-900">
+                Book Now
+              </button>
+              <a
+                href="tel:(386) 574-7272"
+                className="font-bold text-white flex items-center text-lg"
+              >
+                Call (386) 574-7272
+              </a>
+            </div>
+          </Fade>
+        </div>
+      </section>
     </main>
   );
 };
