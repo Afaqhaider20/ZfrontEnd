@@ -38,13 +38,13 @@ const Hero = () => {
                     href="https://book2.getweave.com/c0e939c8-ae93-4574-9323-84a1c55e8447/request-appointment?source=WEBSITE"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-lg bg-blue-900 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-white hover:text-blue-900 border border-blue-900"
+                    className="inline-flex items-center justify-center rounded-lg bg-blue-900 px-6 py-3 font-medium text-white shadow-md transition duration-200 hover:bg-white hover:text-blue-900 border border-blue-900 w-full md:w-auto m-4"
                   >
                     Book Appointment
                   </a>
                   <a
                     href="tel:(386)574-7272"
-                    className="ml-4 font-bold text-blue-900 flex items-center text-lg hover:text-blue-700"
+                    className="ml-4 font-bold text-blue-900 flex items-center text-lg hover:text-blue-700 m-4"
                   >
                     Call (386) 574-7272
                   </a>
