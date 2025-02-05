@@ -71,7 +71,7 @@ const AestheticCrownsAndVeneers = () => {
               What Are Aesthetic Crowns & Veneers?
             </h2>
             <p className="mt-6 text-lg text-center text-gray-700">
-              Aesthetic crowns & veneers are thin, custom-made shells designed. They are used to improve
+              Aesthetic crowns & veneers are thin, custom-made shells. They are used to improve
               your smile by correcting issues such as discoloration, chips, and
               gaps.
             </p>
