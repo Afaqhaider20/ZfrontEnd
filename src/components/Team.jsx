@@ -4,17 +4,15 @@ import { useState } from "react";
 
 const doctors = [
   {
-    name: "Dr. Fatima A Butt DDS",
+    name: "Dr. Fatima A Butt",
     role: "Your Doctor",
-    description:
-      "Dr. Fatima A Butt DDS is a compassionate and experienced physician dedicated to your health and well-being. In her free time, she enjoys hiking, painting, and spending time with her family.",
+    description: "Dr. Fatima A Butt is a Doctor of Dental Surgery dedicated to your health and well-being. In her free time, she enjoys hiking, painting, and spending time with her family.",
     image: "/Images/girlImage.png",
   },
   {
     name: "Dr. Steven J Smith DMD",
     role: "Retired Doctor",
-    description:
-      "Dr. Steven J Smith DMD served our community for over 30 years. He is now retired and enjoys gardening, reading, and traveling with his wife.",
+    description: "Dr. Steven J Smith DMD served our community for over 30 years as a Doctor of Medicine in Dentistry. He is now retired and enjoys gardening, reading, and traveling with his wife.",
     image: "/Images/boyImage.png",
   },
 ];
@@ -23,36 +21,31 @@ const teamMembers = [
   {
     name: "Mary A Coffman RDH",
     role: "Dental Hygienist",
-    description:
-      "Mary A Coffman RDH is dedicated to providing the best dental care possible.",
+    description: "Mary A Coffman RDH is a registered dental hygienist dedicated to providing the best dental care possible.",
     image: "/Images/girlImage.png",
   },
   {
     name: "Saad Aslam CRDH",
     role: "Dental Hygienist",
-    description:
-      "Saad Aslam CRDH specializes in dental hygiene and is passionate about creating beautiful smiles.",
+    description: "Saad Aslam CRDH specializes in dental hygiene and is passionate about creating beautiful smiles.",
     image: "/Images/boyImage.png",
   },
   {
     name: "Bonnie L Byrnes EFDA",
     role: "Dental Assistant",
-    description:
-      "Bonnie L Byrnes EFDA is an expert in dental assistance and is committed to restoring your smile.",
+    description: "Bonnie L Byrnes EFDA is an expanded functions dental assistant committed to restoring your smile.",
     image: "/Images/girlImage.png",
   },
   {
     name: "Rina Lantigua EFDA",
     role: "Dental Assistant",
-    description:
-      "Rina Lantigua EFDA is dedicated to providing the best dental care possible.",
+    description: "Rina Lantigua EFDA is an expanded functions dental assistant dedicated to providing the best dental care possible.",
     image: "/Images/girlImage.png",
   },
   {
     name: "Mayraliz Rodriguez",
     role: "Administrative Assistant",
-    description:
-      "Mayraliz Rodriguez ensures the smooth operation of our office and is committed to providing excellent service.",
+    description: "Mayraliz Rodriguez ensures the smooth operation of our office and is committed to providing excellent service.",
     image: "/Images/girlImage.png",
   },
 ];
