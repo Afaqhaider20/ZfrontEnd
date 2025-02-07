@@ -13,8 +13,9 @@ const doctors = [
     name: "Dr. Steven J Smith DMD",
     role: "Retired Doctor",
     description: "Dr. Steven J Smith DMD served our community for over 30 years as a Doctor of Medicine in Dentistry. He is now retired and enjoys gardening, reading, and traveling with his wife.",
-    image: "/Images/boyImage.png",
+    image: "/Images/025.JPG", // updated image path
   },
+  
 ];
 
 const teamMembers = [

@@ -218,7 +218,7 @@ const AestheticCrownsAndVeneers = () => {
               Transform Your Smile with Aesthatic Crowns & Veneers
             </h2>
             <p className="mt-6 text-lg md:text-xl">
-              Book an appointment or visit our office to discover how veneers
+              Book an appointment or visit our office to discover how Aesthatic Crowns & Veneers
               can give you a radiant, movie-star smile.
             </p>
           </Fade>
