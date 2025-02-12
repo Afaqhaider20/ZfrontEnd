@@ -66,13 +66,20 @@ const OurLocation = () => {
                 <div className="max-w-full mx-auto rounded-lg overflow-hidden">
                   <div className="px-6 py-4">
                     <h3 className="text-lg font-medium text-gray-900">Our Address</h3>
-                    <p className="mt-1 text-gray-600">WR3H+C7P Deltona, Florida, USA</p>
+                    <a 
+                    href="https://maps.app.goo.gl/5mBJqmn6vGMm4CiP7" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-1 text-gray-600 hover:underline"
+                    >
+                      WR3H+C7P Deltona, Florida, USA
+                    </a>
                   </div>
                   <div className="border-t border-gray-200 px-6 py-4">
                     <h3 className="text-lg font-medium text-gray-900">Hours</h3>
-                    <p className="mt-1 text-gray-600">Monday - Friday: 9am - 5pm</p>
-                    <p className="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
-                    <p className="mt-1 text-gray-600">Sunday: Closed</p>
+                    <p className="mt-1 text-gray-600">Monday - Wednesday: 7am - 5pm</p>
+                    <p className="mt-1 text-gray-600">Thursday: 7am - 2pm</p>
+                    <p className="mt-1 text-gray-600">Friday - Sunday: Closed</p>
                   </div>
                   <div className="border-t border-gray-200 px-6 py-4">
                     <h3 className="text-lg font-medium text-gray-900">Contact</h3>
