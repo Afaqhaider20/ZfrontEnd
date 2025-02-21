@@ -10,7 +10,7 @@ const Hero = () => {
       >
         <div className="mx-auto h-full px-4 py-6 sm:max-w-xl md:max-w-full md:px-24 md:py-16 lg:py-24 lg:px-8 max-w-7xl">
           <div className="flex flex-col items-center justify-between lg:flex-row">
-            <div className="relative z-10 w-full lg:w-1/2">
+            <div className="relative z-1 w-full lg:w-1/2">
               <div className="lg:max-w-xl lg:pr-5">
                 <Fade direction="down" triggerOnce>
                   <h2 className="md:mt-0 mt-16 mb-2 max-w-lg text-4xl font-light leading-snug tracking-tight text-blue-800 sm:text-6xl lg:text-7xl drop-shadow-sm">
