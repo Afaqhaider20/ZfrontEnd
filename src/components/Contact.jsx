@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
 import PrivacyPolicy from "./PrivacyPolicy";
+import TermsConditions from "./TermsConditions";
 import Heading from "./Heading";
 
 const Contact = () => {
@@ -9,6 +10,7 @@ const Contact = () => {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [showTermsConditions, setShowTermsConditions] = useState(false);
   const [isPrivacyChecked, setIsPrivacyChecked] = useState(false);
 
   useEffect(() => {
@@ -22,12 +24,12 @@ const Contact = () => {
   }, [error]);
 
   useEffect(() => {
-    if (showPrivacyPolicy) {
+    if (showPrivacyPolicy || showTermsConditions) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [showPrivacyPolicy]);
+  }, [showPrivacyPolicy, showTermsConditions]);
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -61,9 +63,12 @@ const Contact = () => {
     }
   };
 
-  const handleAgree = () => {
-    setIsPrivacyChecked(true);
+  const handleAgreePrivacy = () => {
     setShowPrivacyPolicy(false);
+  };
+
+  const handleAgreeTerms = () => {
+    setShowTermsConditions(false);
   };
 
   return (
@@ -146,13 +151,21 @@ const Contact = () => {
                 onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
               />
               <span className="ml-2 text-gray-700">
-                I agree to receive text messages. For details, refer to our{" "}
+                By submitting this form and signing up for texts, you consent to receive appointment reminders, dental care tips, and promotional offers text messages from Z Family and Cosmetic Dentistry at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg &amp; data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available). Reply HELP for help.{" "}
                 <button
                   type="button"
                   className="text-blue-600 underline"
                   onClick={() => setShowPrivacyPolicy(true)}
                 >
                   Privacy Policy
+                </button>
+                {" "}&{" "}
+                <button
+                  type="button"
+                  className="text-blue-600 underline"
+                  onClick={() => setShowTermsConditions(true)}
+                >
+                  Terms
                 </button>
                 .
               </span>
@@ -178,10 +191,10 @@ const Contact = () => {
           </div>
         </form>
         {showPrivacyPolicy && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 overflow-hidden">
-            <div className="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full relative overflow-y-auto max-h-[50vh] mt-8 mb-8">
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 overflow-hidden backdrop-blur-sm">
+            <div className="bg-white p-8 rounded-lg shadow-xl max-w-3xl w-full relative overflow-y-auto max-h-[80vh] mt-8 mb-8 transition-all duration-300 ease-in-out">
               <button
-                className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={() => setShowPrivacyPolicy(false)}
               >
                 <svg
@@ -199,7 +212,34 @@ const Contact = () => {
                   />
                 </svg>
               </button>
-              <PrivacyPolicy onClose={() => setShowPrivacyPolicy(false)} onAgree={handleAgree} />
+              <PrivacyPolicy onClose={() => setShowPrivacyPolicy(false)} onAgree={handleAgreePrivacy} />
+            </div>
+          </div>
+        )}
+
+        {showTermsConditions && (
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 overflow-hidden backdrop-blur-sm">
+            <div className="bg-white p-8 rounded-lg shadow-xl max-w-3xl w-full relative overflow-y-auto max-h-[80vh] mt-8 mb-8 transition-all duration-300 ease-in-out">
+              <button
+                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 transition-colors"
+                onClick={() => setShowTermsConditions(false)}
+              >
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+              <TermsConditions onClose={() => setShowTermsConditions(false)} onAgree={handleAgreeTerms} />
             </div>
           </div>
         )}
