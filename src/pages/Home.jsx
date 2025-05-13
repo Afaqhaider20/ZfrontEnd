@@ -1,11 +1,16 @@
-import HeroSection from "../components/Hero";
-import Features from "../components/Features";
-import Services from "../components/Services";
-import OurLocation from "../components/OurLocation";
-import Team from "../components/Team";
-import Insurance from "../components/Insurance";
-import FAQs from "../components/FAQs";
-import Offers from "../components/offers";
+// src/pages/Home.jsx
+
+import React from "react";
+import { Helmet } from "react-helmet-async";
+
+import HeroSection   from "../components/Hero";
+import Services      from "../components/Services";
+import Features      from "../components/Features";
+import Team          from "../components/Team";
+import OurLocation   from "../components/OurLocation";
+import Offers        from "../components/offers";
+import FAQs          from "../components/FAQs";
+import Insurance     from "../components/Insurance";
 
 const Home = () => {
   const faqs = [
@@ -77,31 +82,67 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen">
-      <HeroSection />
-      <Services />
-      <Features />
-      <Team />
-      <OurLocation />
-      <div className="bg-blue-700 p-10 mx-4 md:mx-0 mt-8 rounded-lg shadow-md text-center text-white">
-        <h2 className="text-3xl font-extrabold mb-5">Get in Touch with Us</h2>
-        <p className="text-lg mb-5 text-gray-200">
-          Leave us a message today for any inquiries or feedback.
-        </p>
-        <button
-          onClick={() => window.location.href = '/contact'}
-          className="px-6 py-3 bg-white text-blue-800 rounded-md text-lg font-medium transition hover:bg-blue-900 hover:text-white"
-        >
-          Contact Us
-        </button>
-        <p className="text-lg mt-5">
-          Or call us at: <strong>(386) 574-7272</strong>
-        </p>
+    <>
+      <Helmet>
+        <title>Z Family & Cosmetic Dentistry • Deltona, FL</title>
+        <meta
+          name="description"
+          content="Z Family & Cosmetic Dentistry in Deltona, FL offers modern family & cosmetic care. Book online or call (386) 574-7272 today!"
+        />
+        <link
+          rel="canonical"
+          href="https://www.deltonafldentist.com/"
+        />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Dentist",
+            "name": "Z Family & Cosmetic Dentistry",
+            "image": "https://www.deltonafldentist.com/icon.png",
+            "url": "https://www.deltonafldentist.com",
+            "telephone": "(386) 574-7272",
+            "email": "Info@deltonafldentist.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "WR3H+C7P Deltona, Florida, USA",
+              "addressLocality": "Deltona",
+              "addressRegion": "FL",
+              "addressCountry": "US"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
+
+      <div className="bg-gradient-to-b from-blue-50 to-white min-h-screen">
+        <HeroSection />
+        <Services />
+        <Features />
+        <Team />
+        <OurLocation />
+
+        <div className="bg-blue-700 p-10 mx-4 md:mx-0 mt-8 rounded-lg shadow-md text-center text-white">
+          <h2 className="text-3xl font-extrabold mb-5">Get in Touch with Us</h2>
+          <p className="text-lg mb-5 text-gray-200">
+            Leave us a message today for any inquiries or feedback.
+          </p>
+          <button
+            onClick={() => (window.location.href = "/contact")}
+            className="px-6 py-3 bg-white text-blue-800 rounded-md text-lg font-medium transition hover:bg-blue-900 hover:text-white"
+          >
+            Contact Us
+          </button>
+          <p className="text-lg mt-5">
+            Or call us at: <strong>(386) 574-7272</strong>
+          </p>
+        </div>
+
+        <Offers />
+        <FAQs faqs={faqs} sectionTitle="FAQs" />
+        <Insurance />
       </div>
-      <Offers />
-      <FAQs faqs={faqs} sectionTitle="FAQs"/>
-      <Insurance />
-    </div>
+    </>
   );
 };
 

@@ -82,12 +82,16 @@ const Hero = () => {
                 }}
               >
                 <Fade direction="right" triggerOnce>
-                  <img
-                    className="-mb-20 transform hover:scale-105 transition-transform duration-500"
-                    src="/Images/doctors3.png"
-                    alt="hero portrait"
-                  />
-                </Fade>
+  <video
+    className="-mb-20 transform hover:scale-105 transition-transform duration-500"
+    src="/videos/hero.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+</Fade>
+
               </div>
               {/* Floating Icons */}
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
