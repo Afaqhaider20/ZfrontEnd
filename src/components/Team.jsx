@@ -7,7 +7,7 @@ const doctors = [
     name: "Dr. Fatima A Butt",
     role: "Your Doctor",
     description: "Dr. Fatima A Butt is a Doctor of Dental Surgery dedicated to your health and well-being. In her free time, she enjoys hiking, painting, and spending time with her family.",
-    image: "/Images/girlImage.png",
+    image: "/Images/fatima.jpg",
   },
   {
     name: "Dr. Steven J Smith DMD",
@@ -20,34 +20,40 @@ const doctors = [
 
 const teamMembers = [
   {
-    name: "Mary A Coffman RDH",
+    name: "Mary A Moore RDH",
     role: "Dental Hygienist",
     description: "Mary A Coffman RDH is a registered dental hygienist dedicated to providing the best dental care possible.",
-    image: "/Images/girlImage.png",
+    image: "/Images/mary.jpg",
   },
   {
     name: "Saad Aslam CRDH",
     role: "Dental Hygienist",
     description: "Saad Aslam CRDH specializes in dental hygiene and is passionate about creating beautiful smiles.",
-    image: "/Images/boyImage.png",
+    image: "/Images/saad.jpg",
   },
   {
-    name: "Bonnie L Byrnes EFDA",
+    name: "Audrey Jones",
     role: "Dental Assistant",
-    description: "Bonnie L Byrnes EFDA is an expanded functions dental assistant committed to restoring your smile.",
+    description: "Bio Coming Soon. Audrey Jones is a dedicated dental assistant who ensures that our patients receive the best care possible.",
     image: "/Images/girlImage.png",
   },
   {
     name: "Rina Lantigua EFDA",
     role: "Dental Assistant",
     description: "Rina Lantigua EFDA is an expanded functions dental assistant dedicated to providing the best dental care possible.",
+    image: "/Images/rina.jpg",
+  },
+  {
+    name: "Alexandria Thornton",
+    role: " DA EFDA",
+    description: "Bio Coming Soon",
     image: "/Images/girlImage.png",
   },
   {
-    name: "Mayraliz Rodriguez",
-    role: "Administrative Assistant",
-    description: "Mayraliz Rodriguez ensures the smooth operation of our office and is committed to providing excellent service.",
-    image: "/Images/girlImage.png",
+    name: "Lisa Kemp",
+    role: "Treatment Planner",
+    description: "Lisa kemp is a treatment planner who works closely with patients to create personalized treatment plans that meet their needs.",
+    image: "/Images/lisa.jpg",
   },
 ];
 
@@ -76,6 +82,8 @@ const Team = () => {
             <div className="bg-white rounded-[4rem] rounded-bl-md rounded-tr-md overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] flex flex-col md:flex-row min-h-[24rem] md:h-[28rem]">
               <div className="relative w-full md:w-1/2 h-80 md:h-full">
                 <img
+                  style={{ objectPosition: 'center 19%' }}
+
                   className="w-full h-full object-cover"
                   src={doctors[0].image || "/Images/girlImage.png"}
                   alt={doctors[0].name}
@@ -133,6 +141,7 @@ const Team = () => {
               >
                 <div className="relative h-[320px]">
                   <img
+                  style={{ objectPosition: 'center 22%' }}
                     className="w-full h-full object-cover"
                     src={member.image || (member.name.includes("Saad") ? "/Images/boyImage.png" : "/Images/girlImage.png")}
                     alt={member.name}
