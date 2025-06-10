@@ -34,7 +34,7 @@ const teamMembers = [
   {
     name: "Audrey Jones",
     role: "Dental Assistant",
-    description: "Bio Coming Soon. Audrey Jones is a dedicated dental assistant who ensures that our patients receive the best care possible.",
+    description: "Bio Coming Soon",
     image: "/Images/girlImage.png",
   },
   {

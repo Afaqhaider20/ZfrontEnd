@@ -93,6 +93,17 @@ const Home = () => {
           rel="canonical"
           href="https://www.deltonafldentist.com/"
         />
+{/* ====== Add GA/gtag.js scripts here ====== */}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8LNBP8GW4P"></script>
+  <script>
+    {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8LNBP8GW4P');
+    `}
+  </script>
+        
         <script type="application/ld+json">
           {`
           {
